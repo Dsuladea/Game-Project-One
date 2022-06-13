@@ -1,0 +1,66 @@
+Outline document
+
+Map phase
+	9x8 grid
+		Made out of an array
+			Calls grid squares based on player input
+			Array designated series of "Tiles"
+	Impassible tile
+		Player cannot move onto this tile
+	Floor tile
+		Player can move onto floor tile variant
+			Save which tile was there before player stepped onto it and place it back after player leaves
+				Variable that stores exclusively the identity of a tile that player moves onto, starts with "null"
+--					(Incomplete thought)
+		Safe tile
+			Safe pathway for player
+		Hostile tile
+			chance to spawn hostile encounter
+		Damage tile
+			Damages players health, cannot drop below one
+	Player tile
+		Temporarily take up entire tile
+			Eventually create version of player tile that is dynamic based on previous tile on location
+--				could become bloated code, consider simpler solutions
+	Track player position in the arrray
+--		Temporary solution
+			simplify the display until I know that it's functional
+		Use unique tile
+			Possible
+			Lot of art work
+--		Draw overtop of old tile?
+			Possible?
+	
+Action Phase
+	combat elements
+		Player stats, HP, player attack damaged
+			Player object
+			Other stats?
+--				How do I want the power to scale?
+					Items?
+					Stats?
+					How should both, if any of those things be weighted against one another?
+	Story elements
+		Scripted dialogue/exposition
+	puzzle elements
+		Keeps action phase fresh, diversifies gameplay, fun to code
+		
+Menu structure
+	Bottom ten percent of screen used for buttons
+	
+Story/theme
+	Finding yourself
+	
+Art
+	impassible tile
+		Walls, holes, objects in the way
+	Floor tile
+		dirt, smooth stone, paved road
+	Hostile tile
+		Grass, rocky stone, damaged road
+	Damage tile
+		Fire, spike, liquid on ground, sharp ground
+	Player tile
+		Temporarily take up entire tile
+			generic player indicator
+		Create versions of all tiles with player on top of them
